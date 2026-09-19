@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ANA CONCEITO: móveis projetados para viver bem, com design autoral e acabamento impecável.">
+    <title>ANA CONCEITO | Móveis projetados</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="ANA CONCEITO, início">
+            <span class="brand-mark">AC</span>
+            <span class="brand-name">ANA <em>CONCEITO</em></span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">A essência</a>
+            <a href="#processo">Como fazemos</a>
+            <a class="nav-contact" href="#contato">Fale com a gente <span>↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow reveal">Móveis projetados · Desde 2012</p>
+                <h1 class="reveal delay-1">A casa que você<br><i>imaginou.</i></h1>
+                <p class="hero-text reveal delay-2">Peças que traduzem seu jeito de viver, desenhadas com calma e feitas para durar.</p>
+                <a class="button button-light reveal delay-3" href="#colecao">Descobrir a coleção <span>↓</span></a>
+            </div>
+            <div class="hero-image" role="img" aria-label="Sala contemporânea com móveis de madeira e poltrona clara"></div>
+            <div class="hero-note"><span class="line"></span><span>Design que<br>fica.</span></div>
+            <div class="hero-scroll">SCROLL <span>↓</span></div>
+        </section>
+
+        <section class="intro section-pad" id="sobre">
+            <div class="section-kicker"><span>01</span><span>A essência</span></div>
+            <div class="intro-content">
+                <h2>Menos excesso.<br><i>Mais você.</i></h2>
+                <div class="intro-description">
+                    <p>Na ANA CONCEITO, cada ambiente começa com uma conversa. Criamos móveis que respeitam o espaço, a rotina e a história de quem vive ali.</p>
+                    <a class="text-link" href="#processo">Conheça nosso jeito <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection section-pad" id="colecao">
+            <div class="section-heading">
+                <div class="section-kicker"><span>02</span><span>Peças em destaque</span></div>
+                <h2>Escolhas para<br><i>morar melhor.</i></h2>
+            </div>
+            <div class="filter-bar" aria-label="Filtrar produtos">
+                <button class="filter active" data-filter="todos">Todos</button>
+                <button class="filter" data-filter="sala">Sala</button>
+                <button class="filter" data-filter="jantar">Jantar</button>
+                <button class="filter" data-filter="quarto">Quarto</button>
+                <button class="filter" data-filter="home-office">Home office</button>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+            <p class="catalog-note">Cada peça pode ser adaptada ao seu espaço. Consulte acabamentos, medidas e prazos.</p>
+        </section>
+
+        <section class="process section-pad" id="processo">
+            <div class="section-kicker light-kicker"><span>03</span><span>Nosso processo</span></div>
+            <div class="process-layout">
+                <h2>Do primeiro<br>traço ao<br><i>seu lugar.</i></h2>
+                <div class="steps">
+                    <article class="step"><span>01</span><div><h3>Escutar</h3><p>Entendemos sua rotina, seus desejos e o que faz um espaço ser realmente seu.</p></div></article>
+                    <article class="step"><span>02</span><div><h3>Projetar</h3><p>Transformamos ideias em um projeto detalhado, com materiais e medidas precisas.</p></div></article>
+                    <article class="step"><span>03</span><div><h3>Realizar</h3><p>Nossa marcenaria dá vida ao projeto com cuidado artesanal e acabamento impecável.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-pad" id="contato">
+            <div class="contact-image" role="img" aria-label="Detalhe de acabamento de móvel de madeira"></div>
+            <div class="contact-copy">
+                <div class="section-kicker"><span>04</span><span>Vamos conversar</span></div>
+                <h2>Seu próximo<br><i>ambiente começa aqui.</i></h2>
+                <p>Conte um pouco sobre o espaço que você quer transformar. A gente retorna para marcar uma conversa.</p>
+                <a class="button button-dark" href="https://wa.me/+5585994007576?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20ANA%20CONCEITO" target="_blank" rel="noopener">Falar pelo WhatsApp <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top"><span class="footer-logo">ANA <i>CONCEITO</i></span><span>Feito para o seu jeito de viver.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+        <div class="footer-bottom"><span>© 2024 ANA CONCEITO</span><span>São Paulo · Brasil</span><span>Instagram ↗</span></div>
+    </footer>
+
+    <dialog class="product-modal" id="product-modal">
+        <button class="modal-close" aria-label="Fechar detalhes">×</button>
+        <div class="modal-image" id="modal-image"></div>
+        <div class="modal-content"><p class="eyebrow" id="modal-category"></p><h2 id="modal-title"></h2><p id="modal-description"></p><strong id="modal-price"></strong><a class="button button-dark" href="#contato">Tenho interesse <span>↗</span></a></div>
+    </dialog>
+    <dialog class="admin-modal" id="admin-modal">
+        <div class="admin-header"><div><p class="eyebrow">Área restrita do dono</p><h2>Gerenciar <i>produtos.</i></h2></div><button class="admin-close" aria-label="Fechar gerenciamento">×</button></div>
+        <div class="admin-layout">
+            <form class="product-form" id="product-form">
+                <input type="hidden" id="product-id">
+                <label>Nome do produto<input id="product-name" required placeholder="Ex.: Aparador Lina"></label>
+                <label>Categoria<select id="product-category" required><option value="sala">Sala</option><option value="jantar">Jantar</option><option value="quarto">Quarto</option><option value="home-office">Home office</option></select></label>
+                <label>Preço<input id="product-price" required placeholder="Ex.: A partir de R$ 2.400"></label>
+                <label>Imagem (URL)<input id="product-image" required placeholder="https://..."></label>
+                <label>Descrição<textarea id="product-description" required rows="3" placeholder="Descreva brevemente a peça"></textarea></label>
+                <div class="form-actions"><button class="button button-dark" type="submit"><span id="form-submit-label">Adicionar produto</span><span>↗</span></button><button class="clear-form" type="button" id="clear-form">Limpar</button></div>
+            </form>
+            <div class="admin-products"><div class="admin-products-heading"><h3>Produtos publicados</h3><span id="product-count"></span></div><div id="admin-product-list"></div></div>
+        </div>
+        <p class="admin-hint">As alterações ficam salvas neste navegador. Atalho: <strong>Ctrl + G</strong></p>
+    </dialog>
+    <script src="script.js"></script>
+<img src="foto-perfil.jpg" alt="Descrição da imagem">
+</body>
+</html>
